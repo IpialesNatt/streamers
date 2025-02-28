@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container-header {
+    width: 100%;
+    background-color: #003366;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header-logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.header-menu {
+    display: flex;
+    gap: 1.5em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-menu li {
+    position: relative;
+}
+
+.header-menu li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+}
+
+.header-menu li a:hover {
+    color: #ffcc00;
+}
+
+.user-icon img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* Icono de menú */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Menú desplegable en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .header-menu {
+        display: none;  /* Menú oculto por defecto */
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        position: absolute;
+        top: 60px;  /* Ajusta la distancia con respecto al header */
+        left: 0;
+        right: 0;
+        background-color: #003366;
+        padding: 2em;
+        box-sizing: border-box;
+        z-index: 100;
+    }
+
+    .header-menu.active {
+        display: flex;  /* Muestra el menú cuando tiene la clase "active" */
+    }
+
+    .menu-toggle {
+        display: block;  /* Solo se muestra en pantallas pequeñas */
+    }
+
+    .header-menu li a {
+        font-size: 1.2rem;
+    }
+
+    .header-menu li {
+        text-align: center;
+    }
+}

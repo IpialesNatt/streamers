@@ -1,0 +1,85 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0D3B66; /* Azul marino */
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  /* Texto de la página */
+  p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00A8CC; /* Azul claro */
+    margin-top: 20px;
+  }
+  
+  /* Contenedor de eventos */
+  .events-container {
+    background-color: rgba(0, 168, 204, 0.2); /* Azul claro con transparencia */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  /* Botones */
+  button {
+    background-color: #2F855A; /* Verde natural */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #276749; /* Verde más oscuro */
+    transform: scale(1.05);
+  }
+  
+  /* Header y Footer */
+  header, footer {
+    background-color: #0D3B66;
+    padding: 15px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* 📱 Responsividad */
+  @media (max-width: 768px) {
+    p {
+      font-size: 1.5rem;
+    }
+  
+    .events-container {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 10px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    p {
+      font-size: 1.2rem;
+    }
+  
+    .events-container {
+      padding: 10px;
+    }
+  
+    button {
+      font-size: 0.85rem;
+      padding: 8px 12px;
+    }
+  }
+  

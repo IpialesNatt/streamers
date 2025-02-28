@@ -1,0 +1,68 @@
+/* Estilos generales */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo de la imagen principal */
+.home-image {
+    width: 100%;
+    height: 50vh; /* La imagen ocupa el 100% de la altura de la pantalla */
+    object-fit: cover; /* Asegura que la imagen se ajuste manteniendo la proporción */
+    object-position: center; /* Centra la imagen */
+}
+
+/* Estilos para el encabezado (Header) */
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 10; /* Asegura que el encabezado esté encima de la imagen */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar visibilidad */
+}
+
+/* Estilo para el pie de página (Footer) */
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+    z-index: 10; /* Asegura que el pie de página esté encima de la imagen */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar visibilidad */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    /* Para pantallas más pequeñas */
+    .home-image {
+        height: 50vh; /* La imagen ocupa solo el 50% de la pantalla */
+    }
+
+    header, footer {
+        font-size: 18px; /* Reducimos el tamaño del texto */
+        position: relative;
+        text-align: center;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Para pantallas aún más pequeñas */
+    .home-image {
+        height: 40vh; /* Imagen más pequeña en pantallas móviles */
+    }
+
+    header, footer {
+        font-size: 16px; /* Texto aún más pequeño para pantallas pequeñas */
+    }
+}
+
+

@@ -1,0 +1,91 @@
+/* Fondo general */
+body {
+    background: linear-gradient(135deg, #83d4d6, #75bbc9, #7ccae7);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    font-family: 'Helvetica', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Animación de fondo */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Contenedor principal */
+.opinions-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 50vh;
+    width: 100%;
+    margin-top: -20px;
+}
+
+/* Caja de opiniones */
+.opinion-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+/* Estilo futurista de cada opinión */
+.id-opinion {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    padding: 20px 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(14, 3, 60, 0.3);
+    color: #040928;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.id-opinion:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.5);
+}
+
+/* Títulos */
+.id-opinion p strong {
+    color: #130c76;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Texto */
+.id-opinion p {
+    color: #040422;
+    line-height: 1.6;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .opinion-box {
+        grid-template-columns: 1fr;
+    }
+
+    .id-opinion {
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .id-opinion {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+

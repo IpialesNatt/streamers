@@ -1,0 +1,159 @@
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.events-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.events-heading {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+/* Contenedor para las tarjetas de eventos */
+.events-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+/* Tarjetas de los eventos */
+.event-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Hace que las tarjetas ocupen el espacio disponible */
+}
+
+/* Efecto al pasar el ratón */
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Título de cada evento */
+.event-title {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* Galería de fotos dentro de cada tarjeta */
+.photo-gallery {
+    margin-bottom: 15px;
+}
+
+/* Estilos para las imágenes de la galería */
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    max-height: 200px; /* Limita la altura máxima de las imágenes */
+}
+
+/* Descripción de cada evento */
+.event-description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Estilos móviles (pantallas pequeñas) */
+@media screen and (max-width: 768px) {
+    .events-heading {
+        font-size: 1.8rem;
+    }
+
+    .events-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-card {
+        width: 90%;
+        max-width: 350px; /* Hace que las tarjetas sean más grandes en pantallas pequeñas */
+        margin-bottom: 15px;
+    }
+
+    .event-title {
+        font-size: 1.3rem;
+    }
+
+    .photo-gallery img {
+        max-height: 180px; /* Ajusta el tamaño de las imágenes en pantallas pequeñas */
+    }
+
+    .event-description {
+        font-size: 0.95rem;
+    }
+}
+
+/* Estilos para tablets (pantallas medianas) */
+@media screen and (max-width: 1024px) {
+    .events-heading {
+        font-size: 1.9rem;
+    }
+
+    .event-card {
+        width: 45%; /* Las tarjetas ocupan el 45% del ancho en pantallas medianas */
+        max-width: 450px;
+    }
+
+    .event-title {
+        font-size: 1.4rem;
+    }
+
+    .photo-gallery img {
+        max-height: 180px;
+    }
+
+    .event-description {
+        font-size: 1rem;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 1025px) {
+    .events-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .event-card {
+        width: 30%; /* Las tarjetas ocupan el 30% del ancho en pantallas grandes */
+        max-width: 400px;
+    }
+
+    .event-title {
+        font-size: 1.5rem;
+    }
+
+    .photo-gallery img {
+        max-height: 200px;
+    }
+
+    .event-description {
+        font-size: 1rem;
+    }
+}
