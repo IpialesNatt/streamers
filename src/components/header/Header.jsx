@@ -10,14 +10,11 @@ function Header() {
     };
 
     return (
-        <div className="container-header">
+        <div className="container-header">    
             <img src={logo} className="header-logo" alt="Logo" />
             <ul className={`header-menu ${menuOpen ? "active" : ""}`}>
                 <li>
                     <a href="/home" onClick={() => setMenuOpen(false)}>Inicio</a>
-                </li>
-                <li>
-                    <a href="/streamers_list" onClick={() => setMenuOpen(false)}>Lista de Streamers</a>
                 </li>
                 <li>
                     <a href="/places" onClick={() => setMenuOpen(false)}>Lugares de pesca</a>
@@ -33,7 +30,7 @@ function Header() {
                 </li>
             </ul>
             <div className="user-icon">
-                <a href="#">
+                <a href="/contact">
                     <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Usuario" />
                 </a>
             </div>

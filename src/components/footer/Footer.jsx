@@ -43,18 +43,19 @@ function Footer() {
     ];
 
     const socialLinks = [
-        { img: facebook, alt: "Facebook", url: "http://es-es.facebook.com" },
-        { img: gmail, alt: "Gmail", url: "https://mail.google.com" },
-        { img: instagram, alt: "Instagram", url: "https://www.instagram.com" },
+        { img: facebook, alt: "Facebook", url: "https://www.facebook.com/seariverfishing" },
+        { img: gmail, alt: "Gmail", url: "https://mail.google.com/mail/u/0/#inbox" },
+        { img: instagram, alt: "Instagram", url: "https://www.instagram.com/canaryislandsextremefishing/?igsh=MXI5MWEwZHUwdDJ1Mw%3D%3D#" },
         { img: twitter, alt: "Twitter", url: "https://x.com/i/flow/login" },
-        { img: youtube, alt: "YouTube", url: "https://www.youtube.com" }
+        { img: youtube, alt: "YouTube", url: "https://www.youtube.com/@pescandodecosta" }
     ];
 
     const legal = [
         { name: "@FishMatch Contacto", url: "#" },
         { name: "Aviso legal", url: "#" },
         { name: "Política de privacidad", url: "#" },
-        { name: "Cookies", url: "#" }
+        { name: "Cookies", url: "#" },
+        { name: "GitHub", url: "https://github.com/IpialesNatt/streamers" }
     ];
 
     const ListadoEnlaces = ({ titulo, items }) => (

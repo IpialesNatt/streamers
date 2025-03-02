@@ -1,8 +1,7 @@
 /* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #0D3B66; /* Azul marino */
-    color: white;
+    background-color: #6ab1f429; /* Azul marino */
     margin: 0;
     padding: 0;
     text-align: center;
@@ -12,17 +11,16 @@ body {
   p {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #00A8CC; /* Azul claro */
     margin-top: 20px;
   }
   
   /* Contenedor de eventos */
   .events-container {
     background-color: rgba(0, 168, 204, 0.2); /* Azul claro con transparencia */
-    padding: 20px;
-    border-radius: 10px;
+    padding: 5%;
+    border-radius: 0%;
     margin: 20px auto;
-    width: 90%;
+    width: 100%;
     max-width: 800px;
   }
   

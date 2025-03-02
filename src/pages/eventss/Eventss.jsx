@@ -7,7 +7,6 @@ function Eventss() {
   return (
     <>
       <Header />
-      <p>Esta el la pagina de Eventos</p>
 
       <Events/>
 
