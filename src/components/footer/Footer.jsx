@@ -51,10 +51,10 @@ function Footer() {
     ];
 
     const legal = [
-        { name: "@FishMatch Contacto", url: "#" },
-        { name: "Aviso legal", url: "#" },
-        { name: "Política de privacidad", url: "#" },
-        { name: "Cookies", url: "#" },
+        { name: "@FishMatch Contacto", url: "./pages/contact/Contact" },
+        { name: "Aviso legal", url: "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://static.zara.net/static/pdfs/ES/terms-and-conditions/terms-and-conditions-es_ES-20230722.pdf?_sp=e42cdf75-a6c5-472c-b4a6-4211c3da8d60.1740959346277" },
+        { name: "Política de privacidad", url: "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://static.zara.net/static/pdfs/ES/privacy-policy/privacy-policy-es_ES-20241203.pdf?_sp=e42cdf75-a6c5-472c-b4a6-4211c3da8d60.1740959301930" },
+        { name: "Cookies", url: "https://shop.mango.com/es/es/privacy-policy" },
         { name: "GitHub", url: "https://github.com/IpialesNatt/streamers" }
     ];
 
