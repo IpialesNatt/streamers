@@ -202,7 +202,6 @@ Project Link: (https://github.com/IpialesNatt/streamers)
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
 * [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
 * [Malven's Grid Cheatsheet](https://grid.malven.co/)
 * [Img Shields](https://shields.io)
@@ -210,6 +209,7 @@ Use this space to list resources you find helpful and would like to give credit 
 * [Font Awesome](https://fontawesome.com)
 * [React Icons](https://react-icons.github.io/react-icons/search)
 * [Footer Design](https://www.creativosonline.org/25-ejemplos-fantasticos-de-footers-en-diseno-web.html).
+* [Third component map](https://leafletjs.com).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
