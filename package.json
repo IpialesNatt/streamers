@@ -4,12 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "react-scripts start",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "firebase": "^11.4.0",
     "i18next-browser-languagedetector": "^8.0.4",
     "i18next-xhr-backend": "^3.2.2",
     "leaflet": "^1.9.4",
