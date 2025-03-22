@@ -1,22 +1,20 @@
-/* Estilos generales */
+
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #6ab1f429; /* Azul marino */
+    background-color: #6ab1f429; 
     margin: 0;
     padding: 0;
     text-align: center;
   }
   
-  /* Texto de la página */
   p {
     font-size: 1.8rem;
     font-weight: bold;
     margin-top: 20px;
   }
   
-  /* Contenedor de eventos */
   .events-container {
-    background-color: rgba(0, 168, 204, 0.2); /* Azul claro con transparencia */
+    background-color: rgba(0, 168, 204, 0.2); 
     padding: 5%;
     border-radius: 0%;
     margin: 20px auto;
@@ -24,9 +22,8 @@ body {
     max-width: 800px;
   }
   
-  /* Botones */
   button {
-    background-color: #2F855A; /* Verde natural */
+    background-color: #2F855A; 
     color: white;
     padding: 12px 20px;
     border: none;
@@ -37,11 +34,10 @@ body {
   }
   
   button:hover {
-    background-color: #276749; /* Verde más oscuro */
+    background-color: #276749; 
     transform: scale(1.05);
   }
   
-  /* Header y Footer */
   header, footer {
     background-color: #0D3B66;
     padding: 15px;
@@ -49,7 +45,6 @@ body {
     text-align: center;
   }
   
-  /* 📱 Responsividad */
   @media (max-width: 768px) {
     p {
       font-size: 1.5rem;

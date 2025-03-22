@@ -103,7 +103,7 @@ body {
     color: #00CFFF;
 }
 
-/* Ajuste en pantallas grandes */
+
 @media screen and (min-width: 992px) {
     .box {
         display: flex;
@@ -111,7 +111,7 @@ body {
         justify-content: center;
         align-items: center;
         text-align: center;
-        height: 100%; /* Asegura el alineamiento vertical */
+        height: 100%; 
     }
 
     .tittle-box {
@@ -130,7 +130,6 @@ body {
 }
 
 
-/* Responsive para Tablets */
 @media screen and (max-width: 992px) {
     .top-footer {
         flex-direction: row;
@@ -152,7 +151,7 @@ body {
     }
 }
 
-/* Responsive para Móviles */
+
 @media screen and (max-width: 576px) {
     .top-footer {
         flex-direction: column;

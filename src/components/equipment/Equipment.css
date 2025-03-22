@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -22,7 +22,7 @@ body {
     margin-bottom: 20px;
   }
   
-  /* Equipment List */
+
   .equipment-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -40,11 +40,11 @@ body {
     text-align: center;
     transition: transform 0.3s ease-in-out;
     width: 100%;
-    max-width: 320px; /* Ensure cards don’t grow too large */
+    max-width: 320px; 
   }
   
   .equipment-card:hover {
-    transform: scale(1.05); /* Hover effect */
+    transform: scale(1.05);
   }
   
   .photo-gallery img {
@@ -66,8 +66,7 @@ body {
     margin-bottom: 20px;
     font-weight: bold;
   }
-  
-  /* Responsive Design */
+
   @media (max-width: 1024px) {
     .equipment-list {
       grid-template-columns: repeat(2, 1fr);
@@ -84,7 +83,7 @@ body {
   
   @media (max-width: 768px) {
     .equipment-list {
-      grid-template-columns: 1fr; /* Single column on small screens */
+      grid-template-columns: 1fr; 
     }
   
     .equipment-heading {
@@ -92,26 +91,26 @@ body {
     }
   
     .equipment-card {
-      max-width: 100%; /* Full width for mobile */
+      max-width: 100%; 
       margin-bottom: 20px;
     }
   
     .photo-gallery img {
-      height: 180px; /* Adjust image size on mobile */
+      height: 180px; 
     }
   }
   
   @media (max-width: 480px) {
     .equipment-heading {
-      font-size: 1.2rem; /* Smaller font size for very small screens */
+      font-size: 1.2rem; 
     }
   
     .equipment-price {
-      font-size: 1rem; /* Smaller font size for price */
+      font-size: 1rem; 
     }
   
     .photo-gallery img {
-      height: 150px; /* Adjust further for very small screens */
+      height: 150px;
     }
   }
   

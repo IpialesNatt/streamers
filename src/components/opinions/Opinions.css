@@ -1,91 +1,168 @@
-/* Fondo general */
-body {
-    background: linear-gradient(135deg, #83d4d6, #75bbc9, #7ccae7);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
-    font-family: 'Helvetica', sans-serif;
-    overflow-x: hidden;
-}
-
-/* Animación de fondo */
-@keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-/* Contenedor principal */
+/* Estilo global para el contenedor principal */
 .opinions-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
     padding: 20px;
-    min-height: 50vh;
-    width: 100%;
-    margin-top: -20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Caja de opiniones */
+/* Caja de las opiniones */
 .opinion-box {
+    display: grid;               
+    gap: 20px;                   
+    padding: 20px;
+}
+
+
+.opinions-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    padding: 10px;
 }
 
-/* Estilo futurista de cada opinión */
 .id-opinion {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 30px;
-    padding: 20px 30px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(14, 3, 60, 0.3);
-    color: #040928;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
 }
 
-.id-opinion:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.5);
-}
 
-/* Títulos */
-.id-opinion p strong {
-    color: #130c76;
-    font-weight: bold;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-/* Texto */
 .id-opinion p {
-    color: #040422;
-    line-height: 1.6;
     margin: 10px 0;
-    font-size: 15px;
+    font-size: 16px;
+    color: #555;
 }
 
-/* Responsividad */
+.id-opinion strong {
+    color: #333;
+}
+
+/* formular opinion */
+.add-opinion {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.add-opinion h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+
+form input[type="number"] {
+    max-width: 100px;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 30%;
+    transition: background-color 0.3s ease;
+}
+
+
+form input:focus, form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #888;
+}
+/*look for the opinion*/
+
+.search-box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  padding: 10px;
+  width: 100%; 
+  justify-content: center; 
+}
+
+
+.search-box input {
+  padding: 12px 20px; 
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 30px; 
+  outline: none;
+  transition: border-color 0.3s;
+  width: 80%; 
+  box-sizing: border-box; 
+}
+
+
+.search-box input:focus {
+  border-color: #0056b3;
+}
+
+
+.search-box input::placeholder {
+  color: #888;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
+
+/* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
-    .opinion-box {
-        grid-template-columns: 1fr;
+    .opinions-grid {
+        grid-template-columns: 1fr; 
     }
 
-    .id-opinion {
-        padding: 15px 20px;
+    .add-opinion h3 {
+        font-size: 20px;
     }
-}
 
-@media (max-width: 480px) {
-    .id-opinion {
-        padding: 10px 15px;
+    form input, form textarea {
+        font-size: 14px;
+    }
+
+    form button {
         font-size: 14px;
     }
 }
+@media (min-width: 1024px) {
+    .opinion-box {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+    }
+}
+
+/* En pantallas más pequeñas (móviles o tabletas), solo una columna */
+@media (max-width: 1024px) {
+    .opinion-box {
+        grid-template-columns: 1fr;  /* 1 columna */
+    }
+}
+
 

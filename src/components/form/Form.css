@@ -1,31 +1,28 @@
-/* Contenedor principal */
+
 .register-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f0f0f0; /* Fondo suave */
+    background-color: #f0f0f0; 
     font-family: 'Arial', sans-serif;
 }
 
-/* Título del formulario */
 .register-container h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
 }
 
-/* Estilo del formulario */
 .register-form {
     background-color: #fff;
     padding: 30px;
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
     width: 100%;
-    max-width: 400px; /* Limitar ancho */
+    max-width: 400px; 
 }
 
-/* Estilo para los campos de entrada */
 .register-form input {
     width: 100%;
     padding: 12px;
@@ -37,17 +34,15 @@
     transition: border 0.3s ease;
 }
 
-/* Efecto cuando el campo tiene foco */
 .register-form input:focus {
-    border-color: #007BFF; /* Color de borde al enfocar */
+    border-color: #007BFF; 
     outline: none;
 }
 
-/* Estilo del botón */
 .register-form button {
     width: 100%;
     padding: 14px;
-    background-color: #007BFF; /* Color azul */
+    background-color: #007BFF; 
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -56,12 +51,10 @@
     transition: background-color 0.3s ease;
 }
 
-/* Efecto hover para el botón */
 .register-form button:hover {
-    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+    background-color: #0056b3; 
 }
 
-/* Responsividad */
 @media (max-width: 480px) {
     .register-form {
         padding: 20px;

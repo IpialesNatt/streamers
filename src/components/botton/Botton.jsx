@@ -5,7 +5,7 @@ function Botton(){
     
     return (
         <button className="botton-languaje"
-            onClick={() => i18n.changeLanguage(lng.code)} // used to change language that needs to be rendered
+            onClick={() => i18n.changeLanguage(lng.code)} 
             disabled={i18n.language === lng.code}
         >
             <span class={`fi fi-${lng.country_code}`}></span>

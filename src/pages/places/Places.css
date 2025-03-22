@@ -1,23 +1,25 @@
  
   header {
     position: relative;
-    z-index: 101; /* El menú estará siempre sobre el mapa */
+    z-index: 101; 
   }
   
-  /* Mapa */
   .locations-map-container {
     width: 80vw;
     height: 70vh;
-    z-index: 1; /* Z-index bajo para el mapa */
-    position: relative; /* Para aplicar z-index correctamente */
+    z-index: 1; 
+    position: relative;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
   }
   
-  /* Asegúrate de que el mapa no cubra el popup */
   .leaflet-popup {
-    z-index: 102; /* Asegura que el popup esté encima del mapa, pero debajo del menú */
+    z-index: 102; 
+  }
+  .motivation p{
+    text-align: center;
+    margin: 20px;
   }
 
   @media (max-width: 768px) {

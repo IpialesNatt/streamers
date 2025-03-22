@@ -1,9 +1,11 @@
 import "./Footer.css";
+import { Link } from "react-router-dom";
 import facebook from "../../assets/facebook-svg.svg";
 import gmail from "../../assets/gmail.svg";
 import instagram from "../../assets/instagram.svg";
 import twitter from "../../assets/twitter.svg";
 import youtube from "../../assets/youtube.svg";
+import github from "../../assets/github.svg";
 
 function Footer() {
     const enlaces = [
@@ -12,7 +14,7 @@ function Footer() {
             items: [
                 { name: "Turismo", url: "https://www.gobiernodecanarias.org/turismo/" },
                 { name: "Licencias marítima", url: "https://www.gobiernodecanarias.org/pesca/temas/pesca_recreativa/tramitacion.html" },
-                { name: "Tallas minimas", url: "https://www.gobiernodecanarias.org/pesca/temas/tallas_minimas/" }
+                { name: "Tallas mínimas", url: "https://www.gobiernodecanarias.org/pesca/temas/tallas_minimas/" }
             ]
         },
         {
@@ -27,8 +29,8 @@ function Footer() {
             titulo: "PLAYAS",
             items: [
                 { name: "Playa de La Aldea", url: "#" },
-                { name: "Puerto de Mogan", url: "#" },
-                { name: "El agujero de Galdar", url: "#" }
+                { name: "Puerto de Mogán", url: "#" },
+                { name: "El agujero de Gáldar", url: "#" }
             ]
         },
         {
@@ -47,15 +49,15 @@ function Footer() {
         { img: gmail, alt: "Gmail", url: "https://mail.google.com/mail/u/0/#inbox" },
         { img: instagram, alt: "Instagram", url: "https://www.instagram.com/canaryislandsextremefishing/?igsh=MXI5MWEwZHUwdDJ1Mw%3D%3D#" },
         { img: twitter, alt: "Twitter", url: "https://x.com/i/flow/login" },
-        { img: youtube, alt: "YouTube", url: "https://www.youtube.com/@pescandodecosta" }
+        { img: youtube, alt: "YouTube", url: "https://www.youtube.com/@pescandodecosta" },
+        { img: github, alt: "GitHub", url: "https://github.com/IpialesNatt/streamers"}
     ];
 
     const legal = [
-        { name: "@FishMatch Contacto", url: "./pages/contact/Contact" },
-        { name: "Aviso legal", url: "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://static.zara.net/static/pdfs/ES/terms-and-conditions/terms-and-conditions-es_ES-20230722.pdf?_sp=e42cdf75-a6c5-472c-b4a6-4211c3da8d60.1740959346277" },
-        { name: "Política de privacidad", url: "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://static.zara.net/static/pdfs/ES/privacy-policy/privacy-policy-es_ES-20241203.pdf?_sp=e42cdf75-a6c5-472c-b4a6-4211c3da8d60.1740959301930" },
-        { name: "Cookies", url: "https://shop.mango.com/es/es/privacy-policy" },
-        { name: "GitHub", url: "https://github.com/IpialesNatt/streamers" }
+        { name: "@FishMatch Contacto", path: "/contact" },
+        { name: "Aviso legal", path: "/legal" },
+        { name: "Política de privacidad", path: "/privacity" },
+        { name: "Cookies", path: "/cookies" }
     ];
 
     const ListadoEnlaces = ({ titulo, items }) => (
@@ -90,12 +92,13 @@ function Footer() {
                             </a>
                         </div>
                     ))}
+                   <a href="/notice.xml"><img src="/src/assets/iconrss.png" alt="rss icon" width="30" height="30" /></a> 
                 </div>
                 <div className="legal-box">
                     {legal.map((l, index) => (
-                        <a key={index} href={l.url} target="_blank" rel="noopener noreferrer">
+                        <Link key={index} to={l.path}>
                             {l.name}
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </div>

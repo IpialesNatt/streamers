@@ -1,4 +1,4 @@
-/* 🎨 Estilos generales */
+
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -6,7 +6,6 @@ body {
   color: #333;
 }
 
-/* 📰 Contenedor principal */
 .news-container {
   max-width: 1400px;
   margin: 40px auto;
@@ -14,7 +13,6 @@ body {
   text-align: center;
 }
 
-/* 🏷️ Título principal */
 .news-heading {
   font-size: 2.5rem;
   font-weight: bold;
@@ -23,7 +21,6 @@ body {
   text-transform: uppercase;
 }
 
-/* 📌 Diseño en mosaico para pantallas grandes */
 .news-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -31,7 +28,6 @@ body {
   margin: 0 auto;
 }
 
-/* 🖼️ Tarjetas */
 .news-card {
   background: white;
   border-radius: 10px;
@@ -46,14 +42,12 @@ body {
   transform: scale(1.05);
 }
 
-/* 📷 Imagen */
 .photo-gallery img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-/* 🏷️ Título de la noticia */
 .news-title {
   font-size: 1.5rem;
   color: #064663;
@@ -61,7 +55,6 @@ body {
   font-weight: bold;
 }
 
-/* 📄 Descripción */
 .news-description {
   font-size: 1rem;
   color: #555;
@@ -69,7 +62,6 @@ body {
   flex-grow: 1;
 }
 
-/* 📌 Diseño en móviles (una sola columna) */
 @media (max-width: 768px) {
   .news-list {
     display: flex;
