@@ -1,0 +1,71 @@
+[33mcommit 1aedcd575114ea7757db05ad7ab4ada8be270ee5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Merge: 7cf7933 54e37df
+Author: IpialesNatt <natalyipiales@gmail.com>
+Date:   Sat Mar 22 05:37:26 2025 +0000
+
+    Merge branch 'main' of https://github.com/IpialesNatt/streamers
+    
+     Merge branch 'main' of https://github.com/IpialesNatt/streamers
+     :wq
+
+[33mcommit 7cf79338ad755f2a76b1bd8537b533f3f26ac91e[m
+Merge: e65a355 e986823
+Author: IpialesNatt <natalyipiales@gmail.com>
+Date:   Sat Mar 22 05:34:15 2025 +0000
+
+    2 entrega
+
+[33mcommit 54e37df9d942a2cd97f2e80d848a1bdd863363dc[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: IpialesNatt <natalyipiales@gmail.com>
+Date:   Sat Mar 22 05:28:47 2025 +0000
+
+    Add files via upload (#2)
+
+[33mcommit 624ac0968453595ddd7a9b3feb65dcae5777677c[m
+Author: IpialesNatt <natalyipiales@gmail.com>
+Date:   Sat Mar 22 05:24:36 2025 +0000
+
+    Add files via upload
+
+[33mcommit 2814b857c5afb2fe3e13d950546516b32e966013[m
+Merge: 085529a e986823
+Author: IpialesNatt <natalyipiales@gmail.com>
+Date:   Mon Mar 10 00:42:01 2025 +0000
+
+    Resuelto conflicto de fusión y cambios en streamers
+
+[33mcommit 085529a2eb354821533b20c6ebf6c387edd6ccf3[m
+Author: IpialesNatt <natalyipiales@gmail.com>
+Date:   Mon Mar 10 00:31:48 2025 +0000
+
+    Descripción de los cambios
+
+[33mcommit e65a3556bed4e40e1e08abb39dc0d5e342e984b2[m
+Author: IpialesNatt <natalyipiales@gmail.com>
+Date:   Sun Mar 2 23:53:23 2025 +0000
+
+    Update marzo 2
+
+[33mcommit e986823ca20c2c76c0028c562101c3066edf8472[m
+Author: IpialesNatt <natalyipiales@gmail.com>
+Date:   Sun Mar 2 23:34:14 2025 +0000
+
+    Update README.md
+
+[33mcommit 0f7fa96975cc546b849b3d50d88468daa66eb6c6[m
+Author: IpialesNatt <natalyipiales@gmail.com>
+Date:   Sun Mar 2 23:27:15 2025 +0000
+
+    Update README.md
+
+[33mcommit 28ca1e1a5c89d61ee863ef71d308b4c2154e6251[m
+Author: IpialesNatt <natalyipiales@gmail.com>
+Date:   Sun Mar 2 22:59:08 2025 +0000
+
+    marzo 2
+
+[33mcommit 2495cf29f914aa616057c75b3a41a7eb545d3615[m[33m ([m[1;31morigin/develop[m[33m)[m
+Author: IpialesNatt <natalyipiales@gmail.com>
+Date:   Fri Feb 28 19:41:46 2025 +0000
+
+    innit commit cambios
