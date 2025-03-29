@@ -1,11 +1,8 @@
-
-function NewItem(n) {
+function NewItem({ id, title, description }) {  // Desestructuración correcta de props
   return (
-    <div className="new-item-container">
-      <div id={`item${n.key}`} className="new-item">
-        <h2>{n.title}</h2>
-        <p>{n.description}</p>
-      </div>
+    <div id={id} className="news-item">  {/* Solo un contenedor con el ID */}
+      <h3>{title}</h3>
+      <p>{description}</p>
     </div>
   );
 }

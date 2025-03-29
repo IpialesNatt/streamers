@@ -2,267 +2,267 @@
 <rss version="2.0">
 <channel>
   <title>Actualizaciones en Peskapp</title>
-  <link>http://localhost:5173/events/</link>
+  <link>https://peskapp-9c007.web.app/eventss/</link>
   <description>Últimas noticias sobre pesca, conservación marina y actividades acuáticas en Canarias</description>
   <language>es-ES</language>
-  <pubDate>${new Date().toUTCString()}</pubDate>
-  <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+  <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+  <lastBuildDate>Mon, 15 Jan 2024 12:00:00 GMT</lastBuildDate>
   <ttl>60</ttl>
 
   <item>
     <title>Nuevas excursiones</title>
-    <link>http://localhost:5173/#item-1</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-1</link>
     <description>Descubre las nuevas excursiones que hemos preparado para ti</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-1</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-1</guid>
   </item>
 
   <item>
     <title>Nuevas especies declaradas protegidas en Canarias</title>
-    <link>http://localhost:5173/#item-2</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-2</link>
     <description>Se han declarado más especies protegidas en las islas, añadidas a las que ya habían</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-2</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-2</guid>
   </item>
 
   <item>
     <title>Descubren un nuevo arrecife en Canarias</title>
-    <link>http://localhost:5173/#item-7</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-7</link>
     <description>Un equipo de biólogos marinos ha descubierto un arrecife oculto en aguas profundas de Canarias.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-7</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-7</guid>
   </item>
 
   <item>
     <title>Regulación de pesca en zonas protegidas</title>
-    <link>http://localhost:5173/#item-8</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-8</link>
     <description>Se han impuesto nuevas regulaciones para la pesca en zonas protegidas con el fin de preservar la biodiversidad.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-8</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-8</guid>
   </item>
 
   <item>
     <title>Festival de deportes acuáticos</title>
-    <link>http://localhost:5173/#item-9</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-9</link>
     <description>Se anuncia un nuevo festival de deportes acuáticos que incluirá competiciones de surf, windsurf y pesca deportiva.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-9</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-9</guid>
   </item>
 
   <item>
     <title>Avistamiento de cetáceos en Tenerife</title>
-    <link>http://localhost:5173/#item-10</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-10</link>
     <description>Expertos han registrado un aumento en la población de delfines y ballenas en la costa de Tenerife.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-10</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-10</guid>
   </item>
 
   <item>
     <title>Temporada alta de pesca deportiva</title>
-    <link>http://localhost:5173/#item-11</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-11</link>
     <description>La temporada alta de pesca deportiva ha comenzado y se esperan torneos con gran participación.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-11</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-11</guid>
   </item>
 
   <item>
     <title>Medusas en las playas</title>
-    <link>http://localhost:5173/#item-12</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-12</link>
     <description>Autoridades advierten sobre la presencia de medusas en varias playas y recomiendan precaución.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-12</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-12</guid>
   </item>
 
   <item>
     <title>Avance en la conservación de tortugas marinas</title>
-    <link>http://localhost:5173/#item-13</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-13</link>
     <description>Nuevos esfuerzos han permitido la recuperación de poblaciones de tortugas marinas en Canarias.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-13</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-13</guid>
   </item>
 
   <item>
     <title>Ampliación de puertos deportivos</title>
-    <link>http://localhost:5173/#item-14</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-14</link>
     <description>Se ha anunciado la ampliación de varios puertos deportivos para mejorar el acceso a embarcaciones.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-14</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-14</guid>
   </item>
 
   <item>
     <title>Nuevo récord en pesca deportiva</title>
-    <link>http://localhost:5173/#item-15</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-15</link>
     <description>Un pescador ha logrado capturar un ejemplar récord en la última competición de pesca en Gran Canaria.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-15</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-15</guid>
   </item>
 
   <item>
     <title>Curso gratuito de buceo para jóvenes</title>
-    <link>http://localhost:5173/#item-16</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-16</link>
     <description>Se abren inscripciones para un curso gratuito de buceo dirigido a jóvenes amantes del mar.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-16</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-16</guid>
   </item>
 
   <item>
     <title>Investigación sobre la salud del océano</title>
-    <link>http://localhost:5173/#item-17</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-17</link>
     <description>Un grupo de científicos ha iniciado un estudio sobre el impacto del cambio climático en las aguas de Canarias.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-17</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-17</guid>
   </item>
 
   <item>
     <title>Nuevos puntos de acceso a playas</title>
-    <link>http://localhost:5173/#item-18</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-18</link>
     <description>Se han habilitado nuevos accesos para facilitar la llegada de turistas y pescadores a las playas.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-18</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-18</guid>
   </item>
 
   <item>
     <title>Encuentro internacional de pesca sostenible</title>
-    <link>http://localhost:5173/#item-19</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-19</link>
     <description>Canarias será la sede de un encuentro internacional sobre pesca sostenible y conservación marina.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-19</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-19</guid>
   </item>
 
   <item>
     <title>Prohibición de plásticos en las playas</title>
-    <link>http://localhost:5173/#item-20</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-20</link>
     <description>A partir del próximo mes, se prohibirá el uso de plásticos de un solo uso en las principales playas de Canarias.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-20</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-20</guid>
   </item>
 
   <item>
     <title>Nueva aplicación para pescadores</title>
-    <link>http://localhost:5173/#item-21</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-21</link>
     <description>Se lanza una app para ayudar a los pescadores a encontrar las mejores zonas y conocer la normativa vigente.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-21</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-21</guid>
   </item>
 
   <item>
     <title>Expedición científica al Atlántico</title>
-    <link>http://localhost:5173/#item-22</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-22</link>
     <description>Un equipo de exploradores iniciará una expedición para estudiar la biodiversidad marina del Atlántico.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-22</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-22</guid>
   </item>
 
   <item>
     <title>Hallazgo de una nueva especie marina</title>
-    <link>http://localhost:5173/#item-23</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-23</link>
     <description>Biólogos han descubierto una nueva especie de pez en las aguas profundas del archipiélago.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-23</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-23</guid>
   </item>
 
   <item>
     <title>Restauración de arrecifes de coral</title>
-    <link>http://localhost:5173/#item-24</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-24</link>
     <description>Se ha puesto en marcha un proyecto de restauración para proteger los arrecifes de coral en Canarias.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-24</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-24</guid>
   </item>
 
   <item>
     <title>Competencia de fotografía submarina</title>
-    <link>http://localhost:5173/#item-25</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-25</link>
     <description>Anuncian un concurso de fotografía submarina para promover la belleza y conservación del ecosistema marino.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-25</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-25</guid>
   </item>
 
   <item>
     <title>Nueva regulación para la pesca de atún</title>
-    <link>http://localhost:5173/#item-26</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-26</link>
     <description>Se han establecido nuevas normativas para regular la pesca del atún y evitar su sobreexplotación.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-26</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-26</guid>
   </item>
 
   <item>
     <title>Día Internacional de los Océanos</title>
-    <link>http://localhost:5173/#item-27</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-27</link>
     <description>Se celebrará el Día Internacional de los Océanos con actividades educativas y limpiezas de playas.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-27</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-27</guid>
   </item>
 
   <item>
     <title>Apertura de un nuevo acuario en Tenerife</title>
-    <link>http://localhost:5173/#item-28</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-28</link>
     <description>Tenerife inaugura un nuevo acuario con especies marinas autóctonas y actividades interactivas.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-28</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-28</guid>
   </item>
 
   <item>
     <title>Investigación sobre la contaminación marina</title>
-    <link>http://localhost:5173/#item-29</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-29</link>
     <description>Científicos están analizando los niveles de contaminación marina y sus efectos en la fauna local.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-29</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-29</guid>
   </item>
 
   <item>
     <title>Regresan las tortugas bobas</title>
-    <link>http://localhost:5173/#item-30</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-30</link>
     <description>Se confirma el regreso de tortugas bobas a zonas de anidación en Canarias tras años de ausencia.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-30</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-30</guid>
   </item>
 
   <item>
     <title>Gran torneo de pesca en Las Palmas</title>
-    <link>http://localhost:5173/#item-31</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-31</link>
     <description>Se organiza un gran torneo de pesca con premios para los mejores pescadores del archipiélago.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-31</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-31</guid>
   </item>
 
   <item>
     <title>Avistamiento de tiburones en Fuerteventura</title>
-    <link>http://localhost:5173/#item-32</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-32</link>
     <description>Se reportan avistamientos de tiburones inofensivos cerca de la costa de Fuerteventura.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-32</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-32</guid>
   </item>
 
   <item>
     <title>Nuevo centro de estudios marinos</title>
-    <link>http://localhost:5173/#item-33</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-33</link>
     <description>Se ha inaugurado un centro de estudios dedicado a la investigación y conservación del océano.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-33</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-33</guid>
   </item>
 
   <item>
     <title>Alerta por microplásticos en el agua</title>
-    <link>http://localhost:5173/#item-34</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-34</link>
     <description>Un estudio revela altos niveles de microplásticos en las costas canarias, generando preocupación.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-34</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-34</guid>
   </item>
 
   <item>
     <title>Vuelve la feria de pesca deportiva</title>
-    <link>http://localhost:5173/#item-35</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-35</link>
     <description>Se confirma la fecha de la feria anual de pesca deportiva con expositores y expertos invitados.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-35</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-35</guid>
   </item>
 
   <item>
     <title>Talleres de conservación marina para niños</title>
-    <link>http://localhost:5173/#item-36</link>
+    <link>https://peskapp-9c007.web.app/eventss/#item-36</link>
     <description>Diversas organizaciones imparten talleres educativos para concienciar a los niños sobre el cuidado del océano.</description>
-    <pubDate>${new Date().toUTCString()}</pubDate>
-    <guid>http://localhost:5173/#item-36</guid>
+    <pubDate>Mon, 15 Jan 2024 12:00:00 GMT</pubDate>
+    <guid isPermaLink="true">https://peskapp-9c007.web.app/eventss/#item-36</guid>
   </item>
 
 </channel>

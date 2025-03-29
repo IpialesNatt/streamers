@@ -29,6 +29,8 @@
       <ul>
         <li><a href="#services">Services</a></li>
         <li><a href="#community-goals">Community Goals</a></li>
+         <li><a href="#rssfeed">Community Goals</a></li>
+          <li><a href="#deployment">Community Goals</a></li>
       </ul>
     </li>
     <li><a href="#getting-started">Getting Started</a></li>
@@ -62,6 +64,64 @@ We offer a variety of services on our platform:
 The main goal of this platform is to unite a diverse community of fishing lovers. We aim to organize events and activities that not only promote the joy of fishing but also foster safe, responsible, and sustainable practices. Our efforts focus on preserving the natural beauty of the fishing environments and encouraging responsible fishing habits.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### RSS Feed
+
+We have created an RSS feed to keep you updated with the latest fishing news, events, and trends.
+
+What is an RSS Feed?
+
+RSS (Really Simple Syndication) is a web feed that allows users to receive updates automatically from their favorite websites without needing to visit them manually. It provides a simple way to stay informed about new content in a structured and efficient manner.
+
+How Our Fishing RSS Works
+
+Our Fishing News RSS Feed delivers:
+
+Latest Fishing News: Stay informed about developments in the fishing industry.
+
+Upcoming Events: Get notified about fishing tournaments and community gatherings.
+
+Tips & Techniques: Learn new fishing strategies from experts.
+
+Sustainability Updates: Keep up with eco-friendly fishing practices and regulations.
+
+How to Subscribe
+
+To subscribe to our RSS feed, simply copy the following URL and add it to your preferred RSS reader:
+
+https://yourwebsite.com/rss-feed.xml
+
+You can use RSS feed readers like:
+
+Feedly (https://feedly.com)
+
+Inoreader (https://www.inoreader.com)
+
+The Old Reader (https://theoldreader.com)
+
+Stay connected with the fishing community effortlessly!
+
+<img src="src/assets/feeds.PNG" alt="Logo" width="200">
+<img src="src/assets/enlace-item.PNG" alt="Logo" width="200">
+
+
+## Deployment
+
+The project has been successfully deployed to **Firebase Hosting**, providing a fast and secure web platform for our fishing community. 
+
+You can access the live version at:  
+🔗 [https://peskapp-9c007.web.app/home](https://peskapp-9c007.web.app)  
+
+Key deployment details:
+- Automatic CI/CD pipeline configured
+- HTTPS encryption enabled
+- Global CDN for fast loading worldwide
+- Custom domain support available
+
+The production build has been optimized for performance with:
+- Minified JavaScript and CSS
+- Efficient asset caching
+- Lazy loading of components
 
 ### Built With
 
