@@ -2,12 +2,11 @@ import "./Opinions.css";
 import { useEffect, useState, useCallback } from "react";
 import opinionsService from "../../services/opinion.js";
 
-// Función utilitaria para normalizar texto (memoizada)
 const normalizeText = (text) => 
   text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
 function Opinions() {
-    // Estados
+    
     const [opinions, setOpinions] = useState([]);
     const [formData, setFormData] = useState({
         idUser: "",
@@ -21,7 +20,6 @@ function Opinions() {
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
 
-    // Cargar opiniones con useCallback para memoización
     const fetchOpinions = useCallback(async () => {
         setIsLoading(true);
         setError(null);
@@ -45,12 +43,11 @@ function Opinions() {
         }
     }, []);
 
-    // Efecto para cargar opiniones al montar
+
     useEffect(() => {
         fetchOpinions();
     }, [fetchOpinions]);
 
-    // Manejadores de eventos
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         const targetState = editingOpinion ? setEditingOpinion : setFormData;
@@ -110,7 +107,6 @@ function Opinions() {
     const handleEdit = (opinion) => setEditingOpinion({ ...opinion });
     const handleCancelEdit = () => setEditingOpinion(null);
 
-    // Filtrado optimizado
     const filteredOpinions = opinions.filter((opinion) => {
         const normalizedSearch = normalizeText(searchTerm);
         return (
@@ -171,7 +167,7 @@ function Opinions() {
                 </form>
             </div>
 
-            {/* Búsqueda */}
+          
             <div className="search-box">
                 <input
                     type="text"

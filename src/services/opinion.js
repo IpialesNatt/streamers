@@ -1,5 +1,5 @@
 import db from "./firebase";
-import { set, ref, get, remove, push } from "firebase/database";
+import { set, ref, get, remove, push, update } from "firebase/database";
 
 const dbRef = ref(db, "/opinions");
 
@@ -10,18 +10,26 @@ const getAllOpinions = () => {
 
 // Agregar una nueva opinión
 const addOpinion = (opinion) => {
-  const newOpinionRef = push(dbRef); // Crea una nueva referencia en Firebase
-  return set(newOpinionRef, opinion); // Establece los valores en la base de datos
+  const newOpinionRef = push(dbRef);
+  return set(newOpinionRef, opinion)
+    .then(() => newOpinionRef.key); // Devuelve la clave generada
 };
 
-// Eliminar una opinión
-const removeOpinions = (key) => {
-  const dbRefOpinions = ref(db, `/opinions/${key}`);
-  return remove(dbRefOpinions);
+// Actualizar una opinión
+const updateOpinion = (key, opinionData) => {
+  const opinionRef = ref(db, `/opinions/${key}`);
+  return update(opinionRef, opinionData);
+};
+
+// Eliminar una opinión (corregir nombre de función)
+const removeOpinion = (key) => {  // Cambiado de removeOpinions a removeOpinion
+  const opinionRef = ref(db, `/opinions/${key}`);
+  return remove(opinionRef);
 };
 
 export default {
   getAllOpinions,
   addOpinion,
-  removeOpinions,
+  updateOpinion,  // Añadida esta función
+  removeOpinion   // Nombre corregido
 };

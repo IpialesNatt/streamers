@@ -4,7 +4,6 @@ import "./Events.css";
 function Events() {
     return (
         <div className="events-container">
-            <h2 className="events-heading">Eventos de Pesca</h2>
             <div className="events-list">
                 {events.map((event, id) => (
                     <div key={id} className="event-card">
