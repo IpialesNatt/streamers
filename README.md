@@ -6,8 +6,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/your_username/fishing-website">
-    <img src="../../assets/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/IpialesNatt/streamers">
+    <img src="../streamers/src/assets/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Fishing Community Platform</h3>
@@ -69,21 +69,21 @@ The main goal of this platform is to unite a diverse community of fishing lovers
 
 We have created an RSS feed to keep you updated with the latest fishing news, events, and trends.
 
-What is an RSS Feed?
+**What is an RSS Feed?**
 
 RSS (Really Simple Syndication) is a web feed that allows users to receive updates automatically from their favorite websites without needing to visit them manually. It provides a simple way to stay informed about new content in a structured and efficient manner.
 
-How Our Fishing RSS Works
+**How Our Fishing RSS Works**
 
 Our Fishing News RSS Feed delivers:
 
-Latest Fishing News: Stay informed about developments in the fishing industry.
+**Latest Fishing News**: Stay informed about developments in the fishing industry.
 
-Upcoming Events: Get notified about fishing tournaments and community gatherings.
+**Upcoming Events**: Get notified about fishing tournaments and community gatherings.
 
-Tips & Techniques: Learn new fishing strategies from experts.
+**Tips & Techniques**: Learn new fishing strategies from experts.
 
-Sustainability Updates: Keep up with eco-friendly fishing practices and regulations.
+**Sustainability Updates**: Keep up with eco-friendly fishing practices and regulations.
 
 How to Subscribe
 
@@ -91,7 +91,7 @@ To subscribe to our RSS feed, simply copy the following URL and add it to your p
 
 https://yourwebsite.com/rss-feed.xml
 
-You can use RSS feed readers like:
+**You can use RSS feed readers like:**
 
 Feedly (https://feedly.com)
 
@@ -101,24 +101,24 @@ The Old Reader (https://theoldreader.com)
 
 Stay connected with the fishing community effortlessly!
 
-<img src="src/assets/feeds.PNG" alt="Logo" width="200">
-<img src="src/assets/enlace-item.PNG" alt="Logo" width="200">
+<img src="src/assets/feeds.PNG" alt="Logo" width="450">
+<img src="src/assets/enlace-item.PNG" alt="Logo" width="450">
 
 
 ## Deployment
 
 The project has been successfully deployed to **Firebase Hosting**, providing a fast and secure web platform for our fishing community. 
 
-You can access the live version at:  
+You can **access** the live version at:  
 🔗 [https://peskapp-9c007.web.app/home](https://peskapp-9c007.web.app)  
 
-Key deployment details:
+**Key deployment details:**
 - Automatic CI/CD pipeline configured
 - HTTPS encryption enabled
 - Global CDN for fast loading worldwide
 - Custom domain support available
 
-The production build has been optimized for performance with:
+**The production build has been optimized for performance with:**
 - Minified JavaScript and CSS
 - Efficient asset caching
 - Lazy loading of components
