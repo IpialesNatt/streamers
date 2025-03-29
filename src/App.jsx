@@ -7,7 +7,6 @@ import Eventss from "./pages/eventss/Eventss";
 import Cookies from "./pages/cookies/Cookies";
 import Legal from "./pages/legal/Legal";
 import Privacity from "./pages/privacity/Privacity";
-import Noticepage from "./pages/notice-page/Noticepage";
 
 function App() {
   return (
@@ -24,7 +23,6 @@ function App() {
           <Route path="/cookies" element={<Cookies />} />
           <Route path="/legal" element={<Legal />} />
           <Route path="/privacity" element={<Privacity />} />
-          <Route path="/notice-page" element={<Noticepage />} />
         </Routes>
       </BrowserRouter>
 

@@ -1,277 +1,269 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
-
 <channel>
   <title>Actualizaciones en Peskapp</title>
-  <link>https://localhost:5173/</link>
-  <description>Mantente al día de todas la actualizaciones</description>
+  <link>http://localhost:5173/events/</link>
+  <description>Últimas noticias sobre pesca, conservación marina y actividades acuáticas en Canarias</description>
+  <language>es-ES</language>
+  <pubDate>${new Date().toUTCString()}</pubDate>
+  <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+  <ttl>60</ttl>
+
+  <item>
+    <title>Nuevas excursiones</title>
+    <link>http://localhost:5173/#item-1</link>
+    <description>Descubre las nuevas excursiones que hemos preparado para ti</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-1</guid>
+  </item>
 
   <item>
     <title>Nuevas especies declaradas protegidas en Canarias</title>
-    <link>https://localhost:5173/#item-1</link>
-    <description>En las Islas Canarias, diversas especies de peces están protegidas mediante normativas específicas para garantizar su conservación y el equilibrio de los ecosistemas marinos. A continuación, se destacan algunas de estas especies y las regulaciones asociadas:​
-
-Especies con captura prohibida:
-
-Guelde (Atherina presbyter): Su captura con fines comerciales está prohibida, aunque se permite su uso como carnada. ​
-Gobierno de Canarias
-
-Rayas (Taeniura grabata): Conocidas localmente como "chuchos negros", estas rayas son protegidas en Europa y son comunes en las aguas canarias. ​
-ElHuffPost
-
-Especies incluidas en el Catálogo Canario de Especies Protegidas:
-
-Este catálogo, establecido por la Ley 4/2010, incluye especies que requieren protección especial debido a su vulnerabilidad. Aunque la mayoría de las especies listadas son vegetales o invertebrados, algunas especies de peces también están incluidas. Por ejemplo:​
-
-Cabezón de Teneguía (Cheirolophus junonianus)
-
-Cabezón de Sataratá (Cheirolophus satarataensis)
-
-Cabezón de Guelguén (Cheirolophus sventenii sventenii)
-
-Cabezón de Taganana (Cheirolophus tagananensis)
-
-Cabezón de Webb (Cheirolophus webbianus)
-
-Estas especies están protegidas debido a su importancia ecológica y su estado de conservación. ​
-Wikipedia, la enciclopedia libre
-
-Especies de interés para los ecosistemas canarios:
-
-Además de las especies mencionadas, existen otras que, aunque no están en las categorías anteriores, son consideradas de interés ecológico y pueden estar sujetas a regulaciones específicas. Por ejemplo:​
-
-Sama (Dentex dentex)
-
-Vieja (Scorpaena scrofa)
-
-Cabrilla (Serranidae)
-
-Mero (Epinephelinae)
-
-Abade (Mycteroperca fusca)
-
-La captura de estas especies puede estar regulada o restringida para asegurar su sostenibilidad y el equilibrio del ecosistema marino. ​
-Gobierno de Canarias
-
-Consideraciones adicionales:
-
-Es fundamental que tanto pescadores profesionales como recreativos se mantengan informados sobre las regulaciones vigentes, ya que las normativas pueden actualizarse y variar según la especie y la zona. Para obtener información detallada y actualizada, se recomienda consultar fuentes oficiales, como la Consejería de Agricultura, Ganadería, Pesca y Aguas del Gobierno de Canarias.</description>
+    <link>http://localhost:5173/#item-2</link>
+    <description>Se han declarado más especies protegidas en las islas, añadidas a las que ya habían</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-2</guid>
   </item>
+
   <item>
     <title>Descubren un nuevo arrecife en Canarias</title>
-    <link>https://localhost:5173/#item-2</link>
+    <link>http://localhost:5173/#item-7</link>
     <description>Un equipo de biólogos marinos ha descubierto un arrecife oculto en aguas profundas de Canarias.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-7</guid>
   </item>
+
   <item>
     <title>Regulación de pesca en zonas protegidas</title>
-    <link>https://localhost:5173/#item-3</link>
-    <description>En las Islas Canarias, la pesca en zonas protegidas está sujeta a regulaciones específicas destinadas a preservar la biodiversidad marina y garantizar la sostenibilidad de los recursos pesqueros. A continuación, se destacan algunos aspectos clave de la normativa vigente:​
-
-Pesca recreativa:
-
-Prohibiciones específicas: Se prohíbe el uso de luces y equipos eléctricos o electrónicos para atraer, concentrar, aturdir o reducir la capacidad de reacción natural de las especies objeto de captura. Además, está vedada la pesca en zonas delimitadas para el baño o para actividades acuáticas, así como en explotaciones acuícolas. En la pesca recreativa desde la superficie, no se permite pescar a menos de 150 metros de las zonas de baño y de un buceador previamente establecido y correctamente señalizado. ​
-Gobierno de Canarias
-
-Reservas marinas de interés pesquero: Por ejemplo, la isla de La Graciosa y los islotes del norte de Lanzarote están designados como reservas marinas de interés pesquero. La pesca recreativa desde embarcación en estas áreas requiere una autorización específica, y se establecen obligaciones para los titulares de dichas autorizaciones. ​
-Gobierno de Canarias
-
-Pesca profesional:
-
-Normativa específica: La pesca profesional en zonas protegidas está regulada por normativas que buscan equilibrar la actividad pesquera con la conservación del medio marino. Estas regulaciones establecen cuotas, tallas mínimas y períodos de veda para diversas especies.​
-
-Modificaciones legislativas recientes: La Ley 15/2019, de 2 de mayo, modifica la Ley 17/2003, de 10 de abril, de Pesca de Canarias, introduciendo cambios que afectan tanto a la pesca profesional como a la recreativa, con el objetivo de mejorar la gestión sostenible de los recursos pesqueros en el archipiélago. ​
-BOE
-
-Zonas de especial protección:
-
-Áreas marinas protegidas: Existen áreas marinas protegidas donde se restringen o prohíben ciertas actividades pesqueras para proteger hábitats y especies vulnerables. Las regulaciones específicas varían según el estatus de protección de cada área.​
-
-Especies protegidas: Algunas especies, como rayas y tiburones, están protegidas en las aguas canarias. Por ejemplo, la especie conocida como "chucho negro" (Taeniura grabata) es común en la región y está protegida en Europa. ​
-ElHuffPost
-
-Recomendaciones para pescadores:
-
-Informarse adecuadamente: Es esencial que tanto pescadores profesionales como recreativos se mantengan informados sobre las regulaciones vigentes, ya que las normativas pueden actualizarse y variar según la especie y la zona.​
-
-Consultar fuentes oficiales: Para obtener información detallada y actualizada, se recomienda consultar la Consejería de Agricultura, Ganadería, Pesca y Aguas del Gobierno de Canarias y otras autoridades competentes.​
-
-El cumplimiento de estas regulaciones es fundamental para la conservación de los ecosistemas marinos de las Islas Canarias y para asegurar la sostenibilidad de las actividades pesqueras en el archipiélago.</description>
+    <link>http://localhost:5173/#item-8</link>
+    <description>Se han impuesto nuevas regulaciones para la pesca en zonas protegidas con el fin de preservar la biodiversidad.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-8</guid>
   </item>
+
   <item>
     <title>Festival de deportes acuáticos</title>
-    <link>https://localhost:5173/#item-4</link>
+    <link>http://localhost:5173/#item-9</link>
     <description>Se anuncia un nuevo festival de deportes acuáticos que incluirá competiciones de surf, windsurf y pesca deportiva.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-9</guid>
   </item>
+
   <item>
     <title>Avistamiento de cetáceos en Tenerife</title>
-    <link>https://localhost:5173/#item-5</link>
+    <link>http://localhost:5173/#item-10</link>
     <description>Expertos han registrado un aumento en la población de delfines y ballenas en la costa de Tenerife.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-10</guid>
   </item>
+
   <item>
     <title>Temporada alta de pesca deportiva</title>
-    <link>https://localhost:5173/#item-6</link>
-    <description>Temporada alta y especies destacadas:
-
-Marlin Azul: La temporada para la pesca del marlin azul (Makaira nigricans), una de las especies más codiciadas en el ámbito de la pesca deportiva, se concentra entre los meses de junio y septiembre. Durante este periodo, las aguas canarias reciben la migración de estos gigantes del océano, ofreciendo oportunidades únicas para los pescadores. ​
-Canco Gran Canaria
-
-Atunes y Bonitos: Simultáneamente, en primavera y verano, especies como el atún rojo (Thunnus thynnus) y el bonito (Katsuwonus pelamis) son comunes en las aguas canarias. Estos meses son ideales para técnicas de pesca como el curricán y el jigging. ​
-Wikipedia, la enciclopedia libre
-
-Pesca de fondo: Durante los meses más cálidos, especialmente de mayo a septiembre, se intensifica la pesca de fondo en Gran Canaria. Este periodo es propicio para capturar especies como la vieja (Scorpaena scrofa), la cabrilla (Serranus spp.) y el mero (Epinephelus spp.). ​
-Tom's Catch
-
-Pesca durante todo el año:
-
-Aunque existen temporadas pico para ciertas especies, las aguas de Canarias permiten la práctica de la pesca deportiva durante todo el año. La diversidad de especies y las condiciones climáticas favorables aseguran que siempre haya oportunidades para los pescadores, independientemente del mes. ​
-OKGranCanaria
-
-Regulaciones y licencias:
-
-Es importante destacar que, para la pesca recreativa en Canarias, se requiere una licencia específica que puede obtenerse a través de la Consejería de Agricultura, Ganadería, Pesca y Aguas del Gobierno de Canarias. Además, existen normativas que regulan las técnicas permitidas, las tallas mínimas y las cuotas de captura, con el fin de garantizar la sostenibilidad de los recursos marinos. </description>
+    <link>http://localhost:5173/#item-11</link>
+    <description>La temporada alta de pesca deportiva ha comenzado y se esperan torneos con gran participación.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-11</guid>
   </item>
+
   <item>
     <title>Medusas en las playas</title>
-    <link>https://localhost:5173/#item-7</link>
+    <link>http://localhost:5173/#item-12</link>
     <description>Autoridades advierten sobre la presencia de medusas en varias playas y recomiendan precaución.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-12</guid>
   </item>
+
   <item>
     <title>Avance en la conservación de tortugas marinas</title>
-    <link>https://localhost:5173/#item-8</link>
+    <link>http://localhost:5173/#item-13</link>
     <description>Nuevos esfuerzos han permitido la recuperación de poblaciones de tortugas marinas en Canarias.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-13</guid>
   </item>
+
   <item>
     <title>Ampliación de puertos deportivos</title>
-    <link>https://localhost:5173/#item-9</link>
+    <link>http://localhost:5173/#item-14</link>
     <description>Se ha anunciado la ampliación de varios puertos deportivos para mejorar el acceso a embarcaciones.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-14</guid>
   </item>
+
   <item>
     <title>Nuevo récord en pesca deportiva</title>
-    <link>https://localhost:5173/#item-10</link>
+    <link>http://localhost:5173/#item-15</link>
     <description>Un pescador ha logrado capturar un ejemplar récord en la última competición de pesca en Gran Canaria.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-15</guid>
   </item>
+
   <item>
     <title>Curso gratuito de buceo para jóvenes</title>
-    <link>https://localhost:5173/#item-11</link>
+    <link>http://localhost:5173/#item-16</link>
     <description>Se abren inscripciones para un curso gratuito de buceo dirigido a jóvenes amantes del mar.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-16</guid>
   </item>
+
   <item>
     <title>Investigación sobre la salud del océano</title>
-    <link>https://localhost:5173/#item-12</link>
-    <description>La salud de los océanos es fundamental para el equilibrio ecológico global y el bienestar humano. En los últimos años, diversos estudios e informes han resaltado cambios significativos en los océanos, muchos de ellos atribuibles al cambio climático y a actividades humanas.​
-
-Aumento de la temperatura y eventos extremos
-
-2024 fue el año más cálido registrado, con temperaturas medias anuales 1,55 °C por encima de las de 1850-1900. Este incremento ha contribuido a fenómenos como las olas de calor marinas, períodos de temperaturas anormalmente altas en el mar que alteran la biodiversidad y pueden provocar la mortalidad masiva de especies bentónicas. ​
-LOS40
-+1
-El País
-+1
-Wikipedia, la enciclopedia libre
-
-Incremento del nivel del mar
-
-La NASA ha alertado sobre un aumento inesperado del nivel del mar en 2024, con una tasa de 0,59 cm por año, superior a los 0,43 cm previstos. Este fenómeno se debe principalmente a la expansión térmica del agua marina por el calentamiento oceánico. Desde 1993, el nivel del mar ha subido 10 cm, con una aceleración notable en los últimos años. ​
-ElHuffPost
-+1
-LOS40
-+1
-
-Impactos en el Océano Atlántico
-
-El Océano Atlántico, que conecta a América, Europa y África, enfrenta desafíos significativos. La contaminación por desechos industriales, plásticos y productos químicos degrada su calidad y afecta la vida marina. Además, el cambio climático altera sus corrientes oceánicas, como la Circulación Meridional de Vuelco Atlántico (AMOC), afectando patrones climáticos globales. ​
-ecose.org
-National Geographic
-
-Consecuencias para la biodiversidad marina
-
-El aumento de la temperatura y la acidificación de los océanos, resultado de la absorción de CO₂, afectan los ecosistemas marinos. Eventos como las olas de calor marinas pueden causar blanqueamiento de corales y alteraciones en hábitats críticos, afectando la biodiversidad y las pesquerías. ​
-ecose.org
-
-Necesidad de acción global
-
-La información científica subraya la urgencia de abordar el cambio climático y sus efectos en los océanos. Es esencial reducir las emisiones de gases de efecto invernadero, promover energías renovables y establecer políticas de conservación marina para mitigar estos impactos y proteger la salud de los océanos para las generaciones futuras.</description>
+    <link>http://localhost:5173/#item-17</link>
+    <description>Un grupo de científicos ha iniciado un estudio sobre el impacto del cambio climático en las aguas de Canarias.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-17</guid>
   </item>
+
   <item>
     <title>Nuevos puntos de acceso a playas</title>
-    <link>https://localhost:5173/#item-13</link>
+    <link>http://localhost:5173/#item-18</link>
     <description>Se han habilitado nuevos accesos para facilitar la llegada de turistas y pescadores a las playas.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-18</guid>
   </item>
+
   <item>
     <title>Encuentro internacional de pesca sostenible</title>
-    <link>https://localhost:5173/#item-14</link>
+    <link>http://localhost:5173/#item-19</link>
     <description>Canarias será la sede de un encuentro internacional sobre pesca sostenible y conservación marina.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-19</guid>
   </item>
+
   <item>
     <title>Prohibición de plásticos en las playas</title>
-    <link>https://localhost:5173/#item-15</link>
+    <link>http://localhost:5173/#item-20</link>
     <description>A partir del próximo mes, se prohibirá el uso de plásticos de un solo uso en las principales playas de Canarias.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-20</guid>
   </item>
+
   <item>
     <title>Nueva aplicación para pescadores</title>
-    <link>https://localhost:5173/#item-16</link>
+    <link>http://localhost:5173/#item-21</link>
     <description>Se lanza una app para ayudar a los pescadores a encontrar las mejores zonas y conocer la normativa vigente.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-21</guid>
   </item>
+
   <item>
     <title>Expedición científica al Atlántico</title>
-    <link>https://localhost:5173/#item-17</link>
+    <link>http://localhost:5173/#item-22</link>
     <description>Un equipo de exploradores iniciará una expedición para estudiar la biodiversidad marina del Atlántico.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-22</guid>
   </item>
+
   <item>
     <title>Hallazgo de una nueva especie marina</title>
-    <link>https://localhost:5173/#item-18</link>
+    <link>http://localhost:5173/#item-23</link>
     <description>Biólogos han descubierto una nueva especie de pez en las aguas profundas del archipiélago.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-23</guid>
   </item>
+
   <item>
     <title>Restauración de arrecifes de coral</title>
-    <link>https://localhost:5173/#item-19</link>
+    <link>http://localhost:5173/#item-24</link>
     <description>Se ha puesto en marcha un proyecto de restauración para proteger los arrecifes de coral en Canarias.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-24</guid>
   </item>
+
   <item>
     <title>Competencia de fotografía submarina</title>
-    <link>https://localhost:5173/#item-20</link>
+    <link>http://localhost:5173/#item-25</link>
     <description>Anuncian un concurso de fotografía submarina para promover la belleza y conservación del ecosistema marino.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-25</guid>
   </item>
+
+  <item>
+    <title>Nueva regulación para la pesca de atún</title>
+    <link>http://localhost:5173/#item-26</link>
+    <description>Se han establecido nuevas normativas para regular la pesca del atún y evitar su sobreexplotación.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-26</guid>
+  </item>
+
   <item>
     <title>Día Internacional de los Océanos</title>
-    <link>https://localhost:5173/#item-21</link>
-    <description>Se celebrará el Día Internacional de los Océanos con actividades educativas y limpiezas de playas. El Día Mundial de los Océanos se celebra anualmente el 8 de junio para reconocer la importancia de los océanos en nuestro planeta y promover su conservación. ​
-National Geographic
-+2
-Wikipedia, la enciclopedia libre
-+2
-diainternacionalde.com
-+2
-
-Orígenes y propósito
-
-La idea de establecer un día dedicado a los océanos surgió durante la Cumbre de la Tierra en Río de Janeiro en 1992, donde se propuso celebrar el 8 de junio como el Día Mundial de los Océanos. Este día tiene como objetivo destacar la relevancia de los océanos en la vida cotidiana, sensibilizar sobre su estado actual y promover acciones para su protección y sostenibilidad.​
-Wikipedia, la enciclopedia libre
-
-Importancia de los océanos
-
-Los océanos cubren más del 70% de la superficie terrestre y producen al menos el 50% del oxígeno que respiramos. Además, albergan una biodiversidad única y son fundamentales para la regulación del clima global. Proporcionan recursos esenciales, como alimentos y minerales, y son vitales para el transporte y el comercio internacional.​
-Gobierno de México
-+1
-Wikipedia, la enciclopedia libre
-+1
-
-Temas anuales
-
-Cada año, el Día Mundial de los Océanos se centra en un tema específico para abordar diferentes aspectos de la conservación marina. Por ejemplo, en 2024, el lema fue "Despertar nuevas profundidades", enfatizando la necesidad de restaurar la vitalidad de los océanos y promover un equilibrio sostenible. ​
-Wikipedia, la enciclopedia libre
-+3
-United Nations
-+3
-diainternacionalde.com
-+3
-
-Celebraciones y actividades
-
-En este día, se organizan eventos y actividades en todo el mundo, como limpiezas de playas, campañas educativas, exposiciones y conferencias, con el fin de involucrar a la comunidad y fomentar la participación activa en la protección de los océanos.​
-
-Para obtener más información sobre el Día Mundial de los Océanos y conocer las actividades programadas, puedes visitar la página oficial de las Naciones Unidas.</description>
+    <link>http://localhost:5173/#item-27</link>
+    <description>Se celebrará el Día Internacional de los Océanos con actividades educativas y limpiezas de playas.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-27</guid>
   </item>
-</channel>
 
+  <item>
+    <title>Apertura de un nuevo acuario en Tenerife</title>
+    <link>http://localhost:5173/#item-28</link>
+    <description>Tenerife inaugura un nuevo acuario con especies marinas autóctonas y actividades interactivas.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-28</guid>
+  </item>
+
+  <item>
+    <title>Investigación sobre la contaminación marina</title>
+    <link>http://localhost:5173/#item-29</link>
+    <description>Científicos están analizando los niveles de contaminación marina y sus efectos en la fauna local.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-29</guid>
+  </item>
+
+  <item>
+    <title>Regresan las tortugas bobas</title>
+    <link>http://localhost:5173/#item-30</link>
+    <description>Se confirma el regreso de tortugas bobas a zonas de anidación en Canarias tras años de ausencia.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-30</guid>
+  </item>
+
+  <item>
+    <title>Gran torneo de pesca en Las Palmas</title>
+    <link>http://localhost:5173/#item-31</link>
+    <description>Se organiza un gran torneo de pesca con premios para los mejores pescadores del archipiélago.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-31</guid>
+  </item>
+
+  <item>
+    <title>Avistamiento de tiburones en Fuerteventura</title>
+    <link>http://localhost:5173/#item-32</link>
+    <description>Se reportan avistamientos de tiburones inofensivos cerca de la costa de Fuerteventura.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-32</guid>
+  </item>
+
+  <item>
+    <title>Nuevo centro de estudios marinos</title>
+    <link>http://localhost:5173/#item-33</link>
+    <description>Se ha inaugurado un centro de estudios dedicado a la investigación y conservación del océano.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-33</guid>
+  </item>
+
+  <item>
+    <title>Alerta por microplásticos en el agua</title>
+    <link>http://localhost:5173/#item-34</link>
+    <description>Un estudio revela altos niveles de microplásticos en las costas canarias, generando preocupación.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-34</guid>
+  </item>
+
+  <item>
+    <title>Vuelve la feria de pesca deportiva</title>
+    <link>http://localhost:5173/#item-35</link>
+    <description>Se confirma la fecha de la feria anual de pesca deportiva con expositores y expertos invitados.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-35</guid>
+  </item>
+
+  <item>
+    <title>Talleres de conservación marina para niños</title>
+    <link>http://localhost:5173/#item-36</link>
+    <description>Diversas organizaciones imparten talleres educativos para concienciar a los niños sobre el cuidado del océano.</description>
+    <pubDate>${new Date().toUTCString()}</pubDate>
+    <guid>http://localhost:5173/#item-36</guid>
+  </item>
+
+</channel>
 </rss>

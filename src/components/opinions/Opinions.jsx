@@ -1,146 +1,222 @@
 import "./Opinions.css";
-import { useEffect, useState } from "react";
-import opinionsService from "../../services/opinion.js"; // Asegúrate de tener este servicio para manejar Firebase
+import { useEffect, useState, useCallback } from "react";
+import opinionsService from "../../services/opinion.js";
 
-// Función para eliminar tildes de un texto
-const removeAccents = (text) => {
-    return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-};
+// Función utilitaria para normalizar texto (memoizada)
+const normalizeText = (text) => 
+  text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
 function Opinions() {
-    const [opinions, setOpinions] = useState([]); // Estado para las opiniones
-    const [newOpinion, setNewOpinion] = useState({
+    // Estados
+    const [opinions, setOpinions] = useState([]);
+    const [formData, setFormData] = useState({
         idUser: "",
         idBeach: "",
         nameBeach: "",
         stars: 0,
         comment: ""
     });
-    const [searchTerm, setSearchTerm] = useState(""); // Estado para el valor de búsqueda
+    const [editingOpinion, setEditingOpinion] = useState(null);
+    const [searchTerm, setSearchTerm] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState(null);
 
-    // Función para cargar todas las opiniones desde Firebase
-    const findAllOpinions = () => {
-        opinionsService.getAllOpinions()
-            .then((items) => {
-                let allOpinions = [];
-                items.forEach(item => {
-                    const key = item.key;
-                    const data = item.val();
-                    allOpinions.push({
-                        key: key,
-                        idUser: data.idUser,
-                        idBeach: data.idBeach,
-                        nameBeach: data.nameBeach,
-                        stars: data.stars,
-                        comment: data.comment
-                    });
+    // Cargar opiniones con useCallback para memoización
+    const fetchOpinions = useCallback(async () => {
+        setIsLoading(true);
+        setError(null);
+        try {
+            const snapshot = await opinionsService.getAllOpinions();
+            const opinionsData = [];
+            
+            snapshot.forEach((item) => {
+                opinionsData.push({
+                    key: item.key,
+                    ...item.val()
                 });
-                setOpinions([...allOpinions]); // Actualiza el estado con las opiniones
-            })
-            .catch((err) => {
-                console.error("Error al cargar las opiniones:", err);
             });
-    };
+            
+            setOpinions(opinionsData);
+        } catch (err) {
+            console.error("Error loading opinions:", err);
+            setError("Error al cargar las opiniones");
+        } finally {
+            setIsLoading(false);
+        }
+    }, []);
 
-    // Captura los cambios del formulario
+    // Efecto para cargar opiniones al montar
+    useEffect(() => {
+        fetchOpinions();
+    }, [fetchOpinions]);
+
+    // Manejadores de eventos
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setNewOpinion(prev => ({
+        const targetState = editingOpinion ? setEditingOpinion : setFormData;
+        
+        targetState(prev => ({
             ...prev,
-            [name]: value
+            [name]: name === "stars" ? parseInt(value) || 0 : value
         }));
     };
 
-    // Función para manejar el envío del formulario
-    const handleFormSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-
-        // Aquí se envían los datos a Firebase
-        opinionsService.addOpinion(newOpinion)
-            .then(() => {
-                // Actualiza las opiniones para reflejar la nueva
-                setOpinions(prevOpinions => [...prevOpinions, newOpinion]);
-                // Limpia el formulario después de agregar la opinión
-                setNewOpinion({
+        setIsLoading(true);
+        
+        try {
+            if (editingOpinion) {
+                await opinionsService.updateOpinion(editingOpinion.key, editingOpinion);
+                setOpinions(prev => 
+                    prev.map(o => o.key === editingOpinion.key ? editingOpinion : o)
+                );
+                setEditingOpinion(null);
+            } else {
+                const newKey = await opinionsService.addOpinion(formData);
+                setOpinions(prev => [...prev, { ...formData, key: newKey }]);
+                setFormData({
                     idUser: "",
                     idBeach: "",
                     nameBeach: "",
                     stars: 0,
                     comment: ""
                 });
-            })
-            .catch((err) => {
-                console.error("Error al agregar la opinión:", err);
-            });
+            }
+        } catch (err) {
+            console.error("Operation failed:", err);
+            setError(`Error al ${editingOpinion ? "actualizar" : "agregar"} la opinión`);
+        } finally {
+            setIsLoading(false);
+        }
     };
 
-    // Filtra las opiniones según el término de búsqueda
-    const filteredOpinions = opinions.filter((opinion) => {
-        const normalizedSearchTerm = removeAccents(searchTerm.toLowerCase()); // Normaliza el término de búsqueda
-        const normalizedBeachName = removeAccents(opinion.nameBeach.toLowerCase()); // Normaliza el nombre de la playa
-        const normalizedStars = opinion.stars.toString(); // No se necesita normalizar los números
+    const handleDelete = async (opinionKey) => {
+        if (!window.confirm("¿Estás seguro de que quieres eliminar esta opinión?")) return;
+        
+        setIsLoading(true);
+        try {
+            await opinionsService.removeOpinion(opinionKey);
+            setOpinions(prev => prev.filter(o => o.key !== opinionKey));
+            if (editingOpinion?.key === opinionKey) setEditingOpinion(null);
+        } catch (err) {
+            console.error("Delete failed:", err);
+            setError("Error al eliminar la opinión");
+        } finally {
+            setIsLoading(false);
+        }
+    };
 
-        // Filtra por nombre de la playa o valoración
+    const handleEdit = (opinion) => setEditingOpinion({ ...opinion });
+    const handleCancelEdit = () => setEditingOpinion(null);
+
+    // Filtrado optimizado
+    const filteredOpinions = opinions.filter((opinion) => {
+        const normalizedSearch = normalizeText(searchTerm);
         return (
-            normalizedBeachName.includes(normalizedSearchTerm) || 
-            normalizedStars === normalizedSearchTerm
+            normalizeText(opinion.nameBeach).includes(normalizedSearch) || 
+            opinion.stars.toString() === searchTerm
         );
     });
 
-    useEffect(() => {
-        findAllOpinions(); // Llama a la función al montar el componente
-    }, []);
-
     return (
         <div className="opinions-container">
-            {/* Formulario para añadir nueva opinión */}
+            {/* Sección de formulario */}
             <div className="add-opinion">
-                <h3>Añadir Opinión</h3>
-                <form onSubmit={handleFormSubmit}>
+                <h3>{editingOpinion ? "Editar Opinión" : "Añadir Opinión"}</h3>
+                <form onSubmit={handleSubmit}>
                     <input
                         type="text"
                         name="nameBeach"
-                        value={newOpinion.nameBeach}
+                        value={editingOpinion?.nameBeach || formData.nameBeach}
                         placeholder="Nombre de la playa"
                         onChange={handleInputChange}
+                        required
+                        disabled={isLoading}
                     />
                     <input
                         type="number"
                         name="stars"
-                        value={newOpinion.stars}
+                        value={editingOpinion?.stars ?? formData.stars}
                         placeholder="Valoración (1-5)"
                         onChange={handleInputChange}
+                        min="1"
+                        max="5"
+                        required
+                        disabled={isLoading}
                     />
                     <textarea
                         name="comment"
-                        value={newOpinion.comment}
+                        value={editingOpinion?.comment || formData.comment}
                         placeholder="Escribe tu comentario"
                         onChange={handleInputChange}
+                        required
+                        disabled={isLoading}
                     />
-                    <button type="submit">Enviar Opinión</button>
+                    
+                    <div className="form-buttons">
+                        <button type="submit" disabled={isLoading}>
+                            {isLoading ? "Procesando..." : editingOpinion ? "Actualizar" : "Enviar"}
+                        </button>
+                        {editingOpinion && (
+                            <button 
+                                type="button" 
+                                onClick={handleCancelEdit}
+                                disabled={isLoading}
+                            >
+                                Cancelar
+                            </button>
+                        )}
+                    </div>
                 </form>
             </div>
 
+            {/* Búsqueda */}
             <div className="search-box">
                 <input
                     type="text"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     placeholder="Buscar por playa o valoración"
+                    disabled={isLoading}
                 />
             </div>
 
+            {/* Listado de opiniones */}
             <div className="opinion-box">
-                {filteredOpinions.length > 0 ? (
-                    filteredOpinions.map((o) => (
-                        <div key={o.idUser} className="id-opinion">
-                            <p><strong>Playa:</strong> {o.nameBeach}</p>
-                            <p><strong>Valoración:</strong> {o.stars}</p>
-                            <p><strong>Comentario:</strong> {o.comment}</p>
+                {error && <p className="error-message">{error}</p>}
+                
+                {isLoading && opinions.length === 0 ? (
+                    <p>Cargando opiniones...</p>
+                ) : filteredOpinions.length > 0 ? (
+                    filteredOpinions.map((opinion) => (
+                        <div key={opinion.key} className="opinion-card">
+                            <h4>{opinion.nameBeach}</h4>
+                            <div className="rating">
+                                {"★".repeat(opinion.stars).padEnd(5, "☆")}
+                            </div>
+                            <p className="comment">{opinion.comment}</p>
+                            
+                            <div className="opinion-actions">
+                                <button 
+                                    onClick={() => handleEdit(opinion)}
+                                    disabled={isLoading}
+                                    className="edit-button"
+                                >
+                                    Editar
+                                </button>
+                                <button 
+                                    onClick={() => handleDelete(opinion.key)}
+                                    disabled={isLoading}
+                                    className="delete-button"
+                                >
+                                    Eliminar
+                                </button>
+                            </div>
                         </div>
                     ))
                 ) : (
-                    <p>No se encontraron opiniones que coincidan con la búsqueda.</p>
+                    <p>No se encontraron opiniones {searchTerm && `para "${searchTerm}"`}</p>
                 )}
             </div>
         </div>

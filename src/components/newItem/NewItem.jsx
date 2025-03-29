@@ -1,8 +1,8 @@
 
-function NewItem({ n}) {
+function NewItem(n) {
   return (
-    <div>
-      <div id={`item${n.key}`}>
+    <div className="new-item-container">
+      <div id={`item${n.key}`} className="new-item">
         <h2>{n.title}</h2>
         <p>{n.description}</p>
       </div>
